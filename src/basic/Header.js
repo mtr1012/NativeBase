@@ -80,7 +80,7 @@ class Header extends Component {
           }
           translucent={this.props.transparent ? true : this.props.translucent}
         />
-        {variables.isIphoneX ? (
+        {variable.isIphoneX ? (
           <View
             ref={c => (this._root = c)}
             {...this.props}

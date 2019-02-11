@@ -1,11 +1,9 @@
-// @flow
-
 import { Platform, PixelRatio } from "react-native";
 
 import pickerTheme from "./Picker";
 import variable from "./../variables/platform";
 
-export default (variables /*: * */ = variable) => {
+export default (variables = variable) => {
   const platform = variables.platform;
   const selectedStyle = {
     "NativeBase.Text": {
@@ -234,7 +232,7 @@ export default (variables /*: * */ = variable) => {
     ".avatar": {
       "NativeBase.Left": {
         flex: 0,
-        alignSelf: "flex-start",
+        alignSelf: 'flex-start',
         paddingTop: 14
       },
       "NativeBase.Body": {
@@ -281,7 +279,7 @@ export default (variables /*: * */ = variable) => {
           marginLeft: null
         },
         flex: 1,
-        paddingVertical: variables.listItemPadding + 8,
+        paddingVertical: variables.listItemPadding + 5,
         borderBottomWidth: variables.borderWidth,
         borderColor: variables.listBorderColor,
         marginLeft: variables.listItemPadding + 5
@@ -428,7 +426,7 @@ export default (variables /*: * */ = variable) => {
     ".noIndent": {
       marginLeft: null,
       padding: variables.listItemPadding,
-      paddingLeft: variables.listItemPadding + 6
+      paddingLeft: variables.listItemPadding + 6,
     },
     alignItems: "center",
     flexDirection: "row",

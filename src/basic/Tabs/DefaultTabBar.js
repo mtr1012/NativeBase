@@ -5,9 +5,7 @@ import _ from "lodash";
 import { connectStyle, StyleProvider } from "native-base-shoutem-theme";
 import mapPropsToStyleNames from "../../utils/mapPropsToStyleNames";
 import variable from "./../../theme/variables/platform";
-import { TabHeading } from "../TabHeading";
-import { Text } from "../Text";
-import { TabContainer } from "../TabContainer";
+import { TabHeading, Text, TabContainer } from "./../../index";
 import { ViewPropTypes } from "../../utils";
 const ReactNative = require("react-native");
 
@@ -40,7 +38,7 @@ const DefaultTabBar = createReactClass({
     };
   },
 
-  renderTabOption(name, page) {},
+  renderTabOption(name, page) { },
 
   renderTab(
     name,
